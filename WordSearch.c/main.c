@@ -30,7 +30,7 @@
 
 
 
-// Função que conta o numero de linha do arquivo
+// Função que conta o numero de linhas do arquivo
 int countLines(const char *filename) {
     FILE *file = fopen(filename, "r");
 
