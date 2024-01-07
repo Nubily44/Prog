@@ -1,0 +1,66 @@
+Certainly! We can use `matplotlib` and `seaborn` libraries to create some visualizations. Here's an extended version of the code that includes plotting:
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from xgboost import XGBClassifier
+from sklearn.metrics import accuracy_score
+
+# Generate random data
+np.random.seed(42)
+X = np.random.rand(200, 5)  # 200 samples with 5 features each
+y = np.random.randint(0, 2, 200)  # Binary labels (0 or 1)
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# KNN classifier with GridSearchCV
+knn_params = {'n_neighbors': [3, 5, 7], 'weights': ['uniform', 'distance']}
+knn_classifier = KNeighborsClassifier()
+knn_grid = GridSearchCV(knn_classifier, knn_params, cv=3)
+knn_grid.fit(X_train, y_train)
+knn_best = knn_grid.best_estimator_
+
+# SVM classifier with GridSearchCV
+svm_params = {'C': [0.1, 1, 10], 'kernel': ['linear', 'rbf']}
+svm_classifier = SVC()
+svm_grid = GridSearchCV(svm_classifier, svm_params, cv=3)
+svm_grid.fit(X_train, y_train)
+svm_best = svm_grid.best_estimator_
+
+# XGBoost classifier with GridSearchCV
+xgb_params = {'learning_rate': [0.1, 0.01], 'n_estimators': [100, 200], 'max_depth': [3, 5]}
+xgb_classifier = XGBClassifier()
+xgb_grid = GridSearchCV(xgb_classifier, xgb_params, cv=3)
+xgb_grid.fit(X_train, y_train)
+xgb_best = xgb_grid.best_estimator_
+
+# Evaluate models on the test set
+knn_pred = knn_best.predict(X_test)
+svm_pred = svm_best.predict(X_test)
+xgb_pred = xgb_best.predict(X_test)
+
+# Calculate accuracies
+knn_accuracy = accuracy_score(y_test, knn_pred)
+svm_accuracy = accuracy_score(y_test, svm_pred)
+xgb_accuracy = accuracy_score(y_test, xgb_pred)
+
+print(f"KNN Accuracy: {knn_accuracy:.2f}")
+print(f"SVM Accuracy: {svm_accuracy:.2f}")
+print(f"XGBoost Accuracy: {xgb_accuracy:.2f}")
+
+# Plotting the results
+models = ['KNN', 'SVM', 'XGBoost']
+accuracies = [knn_accuracy, svm_accuracy, xgb_accuracy]
+
+plt.figure(figsize=(10, 6))
+sns.barplot(x=models, y=accuracies)
+plt.title('Model Accuracies')
+plt.ylim(0, 1)
+plt.ylabel('Accuracy')
+plt.show()
+```
