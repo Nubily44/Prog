@@ -116,7 +116,7 @@ void printMenu(){
 
     printf("Uso correto do programa:\ncd <filePATH>\ngcc -o <saida.exe> main.c BinTree.c LinkList.c\nStart-Process -FilePath \"<saida>\" -ArgumentList \"<texto.txt>\", \"<tipo_de_estrutura>\"\n\n");
     printf("Tipos de estrutura de dados:\n\"lista\" // \"arvore\"\n");
-    printf("Para sair do programa, digite: \"sair_do_programa\" como palavra buscada\n\n");
+    printf("Para sair do programa, digite: \"fim\"\n\n");
     printf("Exemplo de uso:\nStart-Process -FilePath \"test.exe\" -ArgumentList \"texto.txt\", \"lista\"\n\n");
     printf("Code by Lily\n\n\n");
 
