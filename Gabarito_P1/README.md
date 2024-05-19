@@ -1,6 +1,6 @@
 ## Gabarito P1 (Não Oficial)
 
-Gabarito não oficial, feito por Lily para a P1 da matéria ACH2001 (da qual sou monitora)
+Gabarito não oficial, feito por Lily(Aline Crispim) para a P1 da matéria ACH2001 (da qual sou monitora)
 
 ## Como Compilar e Executar o Programa:
 Para compilar o programa, basta digitar no terminal:
