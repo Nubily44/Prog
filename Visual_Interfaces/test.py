@@ -10,7 +10,7 @@ class CuteWindow(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Cute App")
-        self.setFixedSize(300, 200)
+        self.setFixedSize(1200, 800)
 
         # Widgets
         title = QLabel("Hello ♡")
