@@ -1,19 +1,18 @@
 import threading
 
-
 class NFC_Scanner:
     def __init__(self):
         self.request = threading.Event()
         self.done = threading.Event()
 
     def emit(self):
-        # Prepare for a new request
+        # Limpa o evento de conclusão
         self.done.clear()
 
-        # Notify listener
+        # Solicita a leitura NFC
         self.request.set()
 
-        # Wait until listener finishes
+        # Espera até o listener processar a solicitação
         self.done.wait()
 
 class Assento:
@@ -36,8 +35,10 @@ def SearchAssento(assentos):
 
 def listen(nfc):
     while True:
-        # Wait for an NFC scan
+        # Espera por um evento de solicitação NFC
         nfc.request.wait()
+        
+        # Limpa o evento de solicitação para a próxima leitura
         nfc.request.clear()
 
         print("NFC Send")
@@ -47,7 +48,7 @@ def listen(nfc):
         for assento in livres:
             assento.bipar()
 
-        # Notify the emitter that processing is complete
+        # Notifica que a leitura NFC foi processada
         nfc.done.set()
 
 
