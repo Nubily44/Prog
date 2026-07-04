@@ -1,14 +1,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct No{
+typedef struct No2{
     int a;
     int b;
-}No;
+}No2;
+
+struct No1{
+    int a;
+    int b;
+};
 
 int main() {
-    No a = {2,3};
+    
+    struct No1 a = {1,2};
+    No2 b = {2,3};
 
+
+    
     printf("%d, %d",a.a, a.b);
+    printf("%d, %d",b.a, b.b);
 
 }
