@@ -13,12 +13,17 @@ struct No1{
 
 int main() {
     
+    float matrix[3][2] = {{1,2},
+                        {3,4},
+                        {5,6}
+                        };
+
     struct No1 a = {1,2};
     No2 b = {2,3};
 
-
+    printf("%p", matrix);
     
-    printf("%d, %d",a.a, a.b);
-    printf("%d, %d",b.a, b.b);
+    /*printf("%d, %d",a.a, a.b);
+    printf("%d, %d",b.a, b.b);*/
 
 }
