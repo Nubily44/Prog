@@ -23,7 +23,7 @@ int main() {
 
     printf("%p", matrix);
     
-    /*printf("%d, %d",a.a, a.b);
-    printf("%d, %d",b.a, b.b);*/
+    printf("%d, %d",a.a, a.b);
+    printf("%d, %d",b.a, b.b);
 
 }
