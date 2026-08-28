@@ -23,20 +23,24 @@ Cifra: hvvcaumqhdwthilagnarsrchrwrppahvvcave
 
 01 - O -> c
 02 - L -> a
-03 - Tesourinha
-04 - Ondinha
-05 - N
-06 - U
-07 - 8
-08 - X
-09 - 4
-10 - C
-11 - Inf
-12 - I Estranho
-13 - 2 - e
-14 - ku
+03 - Tesourinha -> m
+04 - Ondinha - i
+05 - N -> n
+06 - U -> h
+07 - 8 -> o
+08 - X -> d
+09 - 4 -> f
+10 - C - l
+11 - Inf - p
+12 - I Estranho -> r
+13 - 2 -> e
+14 - ku -> v
 15 - 9 -> s
-16 - Arco
-17 - h
-18 - 1
+16 - Arco -> u
+17 - h -> q
+18 - 1 -> t
 19 - y
+20 - b -> g
+21 - 9 Estranho -> b
+22 - sigma reverso -> j 
+23 - quadrado -> z
