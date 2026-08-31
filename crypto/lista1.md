@@ -45,7 +45,11 @@ Cifra: hvvcaumqhdwthilagnarsrchrwrppahvvcave
 22 - sigma reverso -> j 
 23 - quadrado -> z
 
+Texto original: 
+
+
 Caminho Difícil
+
 
 Por milhares de anos o ser-humano vem tentando encontrar respostas para perguntas como "Qual o sentido da vida?"A filosofia que, ao que tudo indica, parece ter se iniciado com Tales de Mileto em meados de 700 a.C, visa encontrar vestígios de perguntas sem respostas. A pesquisa profunda pela verdade absoluta advém da filosofia, e quando falamos a respeito de caminhos fáceis *oc* difíceis, estamos nos referindo a esse tipo de teorema.
 
