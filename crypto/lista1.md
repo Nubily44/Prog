@@ -55,5 +55,7 @@ Por milhares de anos o ser-humano vem tentando encontrar respostas para pergunta
 
 É fácil aceitar o que desde criança te ensinaram que é errado, difícil é quando adulto, entender que te ensinaram errado o que desde criança você suspeitou que fosse correto. Em outras palavras, se você se enquadra em alguém cujos estímulos do meio lhe determinaram certo comportamento, fazendo com que estivesse a mercê de crenças já providas e bem estabelecidas em dogmas e rituais, com uma massa concentrada de pessoas nela; ou, permitindo-o ficar no conformismo, aceitando o conceito de felicidade e de sentido da vida embutido pela mídia e pela sociedade, então claramente você faz parte do caminho fácil para a busca pela verdade absoluta. Acaso se enquadre na segunda opção, ou seja, aquele que suspeitava de todo conjunto de crenças que lhe foi enraizado, então este tem tudo para ser um investigador de veracidade nas coisas ao *sec* redor, entrando em um caminho mais complicado, no *qcal* uma minoria se
 
+## 3
 
-# 3
+3.1
+Com a mesma probabilidade de gerar uma chave de 1 bit, P(M=m | C=c) = 1/2, e portanto a cifra possui sigilo perfeito 
