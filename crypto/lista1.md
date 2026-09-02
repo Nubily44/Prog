@@ -59,3 +59,6 @@ Por milhares de anos o ser-humano vem tentando encontrar respostas para pergunta
 
 3.1
 Com a mesma probabilidade de gerar uma chave de 1 bit, P(M=m | C=c) = 1/2, e portanto a cifra possui sigilo perfeito 
+
+3.2
+Considerando que a lógica XOR possui frequência igual de 0s e 1s, se a probabilidade de uma chave é diferente da probabilidade da outra, o sigilo perfeito é quebrado (já que a chave com maior probabilidade geraria uma assimetria na probabilidade das cifras)
