@@ -95,3 +95,4 @@ Se e1 e e2 são desprezíveis, e1*e2 < 1 / (p(n))^2. Porém, P(n)^2 pode ser ape
 
 se f(n), a partir de n0, é menor que e(n), f(n) é necessariamente menor que 1/p(n), e portanto é desprezível
 
+sxtq = 4(?????)
