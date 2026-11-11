@@ -23,3 +23,10 @@ Assim, uma solução seria utilizar o protocolo CBC-MAC, que utiliza uma chave c
 
 Como f(x,y) = x . y = z, para conseguirmos achar uma pré-imagem de z, podemos considerar que x ou y seja igual a 1, e seu par igual a z. Além disso, para chegarmos a todos os valores possíveis de x e y que geram z, basta começarmos a dividir esse resultado por todos os fatores primos, iniciando pelo 2
 
+## 4
+
+4.1 Por força bruta, teríamos que testar 2^128 mensagens. Portanto, a chance de acharmos seria 1/(2^128)
+
+4.2 Semelhante ao paradoxo do aniversário, para que tenhamos uma chance maior que 50% em uma colisão de hash, teríamos de testar sqrt(2^n) mensagens, sendo n o número de bits da mensagem. No total, testaríamos 2^64 mensagens
+
+CBC-MAC Key: b"1234567890123456"
