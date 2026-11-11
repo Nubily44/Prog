@@ -11,6 +11,6 @@ c = m XOR G(k)
 
 basta aplicar c' = c XOR m XOR m' e obter
 c' = 110001 XOR 101010 XOR 001011
-c1 = 010000
+c' = 010000
 
 ## 2
