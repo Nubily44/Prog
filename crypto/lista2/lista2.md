@@ -1,4 +1,4 @@
-# Lista 1 - Infosec - Aline Crispim de Moraes (Nusp: 14567051)
+# Lista 2 - Infosec - Aline Crispim de Moraes (Nusp: 14567051)
 
 ## 1
 
