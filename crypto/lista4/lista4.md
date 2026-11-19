@@ -18,3 +18,11 @@ G = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10},  a * b mod 11
 2^9 = 3*2mod11 = 6
 
 Portanto o grupo é cíclico
+
+1.2
+
+Alice envia 2^3 = 8, G e 2
+
+Bob recebe, e retorna 2^7 = 7 para Alice
+
+Alice então faz (2^7)^3 e Bob faz (2^3)^7, ambos chegando no valor: 2^21mod11 = 2
