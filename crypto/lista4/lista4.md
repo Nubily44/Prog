@@ -26,3 +26,8 @@ Alice envia 2^3 = 8, G e 2
 Bob recebe, e retorna 2^7 = 7 para Alice
 
 Alice então faz (2^7)^3 e Bob faz (2^3)^7, ambos chegando no valor: 2^21mod11 = 2
+
+1.3
+
+Eva demoraria para descobrir os dois números utilizados por Alice e Bob equivalente a testar todos os logaritmos discretos da operação. Essa busca, em um grupo de 10 elementos é trivial, e portanto a forma de comunicação não é segura, mas em um caso real, seriam utilizados cententas se não milhares de elementos, o que aumentaria seu tempo de busca exponencialmente-
+
