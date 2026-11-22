@@ -31,3 +31,6 @@ Alice então faz (2^7)^3 e Bob faz (2^3)^7, ambos chegando no valor: 2^21mod11 =
 
 Eva demoraria para descobrir os dois números utilizados por Alice e Bob equivalente a testar todos os logaritmos discretos da operação. Essa busca, em um grupo de 10 elementos é trivial, e portanto a forma de comunicação não é segura, mas em um caso real, seriam utilizados cententas se não milhares de elementos, o que aumentaria seu tempo de busca exponencialmente-
 
+1.4
+
+Não, pois o sistema de Diffie Hellman ainda é vulnerável a um ataque de Man in the Middle, em que Eva entra no meio da comunicação, e estabelesce um contato direto com Alice e Bob, de forma a interceptar todas as mensagens e le-las com seu par de chaves publica e privada, atuando como um meio
