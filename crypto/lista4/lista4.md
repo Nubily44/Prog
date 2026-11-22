@@ -34,3 +34,26 @@ Eva demoraria para descobrir os dois números utilizados por Alice e Bob equival
 1.4
 
 Não, pois o sistema de Diffie Hellman ainda é vulnerável a um ataque de Man in the Middle, em que Eva entra no meio da comunicação, e estabelesce um contato direto com Alice e Bob, de forma a interceptar todas as mensagens e le-las com seu par de chaves publica e privada, atuando como um meio
+
+## 2
+
+2.1
+
+p = 5
+q = 11
+e = 3
+
+N = p \* q = 55
+Phi(N) = (p-1)(q-1) = 10 \* 4 = 40
+
+d \* e = 1mod40 -> 3d = 1mod40
+
+testando multiplos de 3 perto dos multiplos de 40
+
+3 \* 14 = 42 -> 2
+3 \* 27 = 84 -> 1
+
+d = 27
+
+Logo pk = <3, 55>
+e sk = <27, 55>
