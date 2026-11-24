@@ -56,4 +56,6 @@ testando multiplos de 3 perto dos multiplos de 40
 d = 27
 
 Logo pk = <3, 55>
-e sk = <27, 55>
+e sk = <27, 55
+
+2.2
