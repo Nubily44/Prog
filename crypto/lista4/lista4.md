@@ -67,3 +67,8 @@ sk = <27, 55
 c = 7^3mod55 = 343 mod55 = 13
 m = 13^27mod55 = 7
 
+2.3
+
+O uso do RSA não seria adequado para criptografar mensagens grandes, pois além da operação por si só ser extremamente custosa, o RSA só consegue cifrar mensagens menores que N
+
+Assim, o uso e um encapsulamento é necessário, para que a mensagem seja criptografada com uma chave, e essa chave seja enviada por RSA, assim formando um sistema híbrido (criptografia da mensagem por um sistema simétrico, e criptografia da chave por um sistema assimétrico)
