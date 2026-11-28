@@ -72,3 +72,24 @@ m = 13^27mod55 = 7
 O uso do RSA não seria adequado para criptografar mensagens grandes, pois além da operação por si só ser extremamente custosa, o RSA só consegue cifrar mensagens menores que N
 
 Assim, o uso e um encapsulamento é necessário, para que a mensagem seja criptografada com uma chave, e essa chave seja enviada por RSA, assim formando um sistema híbrido (criptografia da mensagem por um sistema simétrico, e criptografia da chave por um sistema assimétrico)
+3.2
+
+Não, pois t = 9^27 mod 55 = 4
+
+e portanto Ver retornaria 0
+
+## 4
+
+4.1
+
+Eva poderia, caso interceptasse a mensagem de Alice, modificar a mensagem, e enviar uma mensagem diferente m', com a chave pública de Bob, que ao decifrar a mensagem não saberia garantir que foi Alice quem a mandou.
+
+Isso acontece pois o protocolo de Diffie Hellman não garante autenticidade e integridade, apenas confidencialidade
+
+4.2
+
+O certificado tem o próposito de validar a identidade de Bob para Alice, ja que a mesma pode pegar o certificado que Bob a enviou, e verificar esse certificado com a chave pública da autoridade A, assim validando IDb e pkb (identidade de Bob)
+
+Para Alice confiar em Bob portanto, só basta ela confiar na autoridade certificadora, e que IDb e pkb seja realmente a identidade e chave publica de Bob, além de que o certificado seja válido
+
+No PGP, é criado uma rede de confiânça mútua, em que qualquer novo nodo deve confiar (e ser confiado por) alguem da rede, para que ele possa participar do protocolo. Já no SSH, existe uma lógica de TOFU (Trust on First Use), em que na primeira interação é criado uma  identificação que será utilizada para as demais interações. Por fim, no TLS, são utilizadas organizações certificadoras, semelhante ao exemplo dado, para garantir a autenticidade e integridade das mensagens.
